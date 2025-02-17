@@ -33,6 +33,7 @@ export class CustomerControllerBase {
     return await this.service.createCustomer({
       data: data,
       select: {
+        cool: true,
         createdAt: true,
         deleted: true,
         id: true,
@@ -49,6 +50,7 @@ export class CustomerControllerBase {
     return this.service.customers({
       ...args,
       select: {
+        cool: true,
         createdAt: true,
         deleted: true,
         id: true,
@@ -66,6 +68,7 @@ export class CustomerControllerBase {
     const result = await this.service.customer({
       where: params,
       select: {
+        cool: true,
         createdAt: true,
         deleted: true,
         id: true,
@@ -92,6 +95,7 @@ export class CustomerControllerBase {
         where: params,
         data: data,
         select: {
+          cool: true,
           createdAt: true,
           deleted: true,
           id: true,
@@ -118,6 +122,7 @@ export class CustomerControllerBase {
       return await this.service.deleteCustomer({
         where: params,
         select: {
+          cool: true,
           createdAt: true,
           deleted: true,
           id: true,

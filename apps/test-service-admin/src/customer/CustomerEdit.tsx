@@ -5,6 +5,7 @@ export const CustomerEdit = (props: EditProps): React.ReactElement => {
   return (
     <Edit {...props}>
       <SimpleForm>
+        <div />
         <TextInput label="deleted" source="deleted" />
       </SimpleForm>
     </Edit>

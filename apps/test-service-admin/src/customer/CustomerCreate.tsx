@@ -5,6 +5,7 @@ export const CustomerCreate = (props: CreateProps): React.ReactElement => {
   return (
     <Create {...props}>
       <SimpleForm>
+        <div />
         <TextInput label="deleted" source="deleted" />
       </SimpleForm>
     </Create>

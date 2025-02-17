@@ -8,6 +8,7 @@ generator client {
 }
 
 model Customer {
+  cool      Json?
   createdAt DateTime @default(now())
   deleted   String?
   id        String   @id @default(cuid())
